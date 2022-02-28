@@ -9,27 +9,34 @@
 
     <title>Fietswinkel</title>
 
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- <div id="page"> -->
     <header><?= getHeader(); ?></header>
 
-    <nav><?= getNav() ?></nav>
-    <div id="main">
-        <aside class="asideLeft"><?= getAside('left'); ?></aside>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <?= getNav(); ?>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="">
+        <!-- <aside class="asideLeft"><?= getAside('left'); ?></aside> -->
 
         <section><?= getSection(); ?></section>
 
-        <aside class="asideRight"><?= getAside('Right'); ?></aside>
+        <!-- <aside class="asideRight"><?= getAside('Right'); ?></aside> -->
     </div>
 
     <footer><?= getFooter(); ?></footer>
-    <!-- </div> -->
-    
+
 </body>
 
 </html>

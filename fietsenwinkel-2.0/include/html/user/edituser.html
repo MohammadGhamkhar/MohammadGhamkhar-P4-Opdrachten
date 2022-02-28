@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiets wijzigen</title>
+</head>
+
+<body>
+  <h1>Fiets wijzigen</h1>
+
+  <form class="" action="" method="post">
+    <div class="row">
+      <div class="col">
+        <label for="merk">Username</label>
+        <input type="text" name="username" value="<?=$username ?>" class="form-control" required>
+      </div>
+      <div class="col">
+        <label for="type">Pasword</label>
+        <input type="text" class="form-control" name="password" value="<?= $password; ?>" required>
+      </div>
+      <div class="col">
+        <label for="prijs">Role</label>
+        <input type="text" class="form-control" name="role" value="<?=$role ?>" required>
+      </div>
+    </div>
+    
+
+    <button type="submit" name="wijzigen" class="btn btn-success">wijzigen</button>
+    <button type="button" name="annuleren" class="btn btn-danger" onclick="window.location='index.php?page=adminusers';">annuleren</button>
+  </form>
+</body>
+
+</html>
